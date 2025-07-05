@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength & Breach Checker</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Password Strength & Breach Checker</h1>
+    <div class="box">
+        <h2>Check Your Password</h2>
+        <div class="password-field">
+            <input type="password" id="password" placeholder="Enter your password">
+            <span id="togglePassword" class="toggle-eye">👁️</span>
+        </div>
+        <div class="feedback">
+            <div class="strength" id="strength"></div>
+            <div class="progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div id="timeToCrack"></div>
+            <div class="breach-warning" id="breachWarning"></div>
+            <div id="breachCount"></div>
+        </div>
+
+        <div class="policy">
+            <h3>Password Must Contain:</h3>
+            <ul>
+                <li id="lengthRule"><span class="icon">❌</span> At least 12 characters</li>
+                <li id="upperRule"><span class="icon">❌</span> Uppercase letter</li>
+                <li id="lowerRule"><span class="icon">❌</span> Lowercase letter</li>
+                <li id="numberRule"><span class="icon">❌</span> Number</li>
+                <li id="symbolRule"><span class="icon">❌</span> Symbol</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 All Rights Reserved to Umang Mishra | Powered by HaveIBeenPwned
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
